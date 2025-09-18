@@ -1,0 +1,118 @@
+@use "@/scss/helpers" as *;
+
+.invest-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: fluid-mobile(24, 32) fluid-mobile(18, 32);
+  border-radius: 15px;
+  height: 474px;
+  background-image: url('@/assets/img/invest-card-bg-1.svg'), linear-gradient(146deg, #f7f7f7 0%, #dde8ff 100%);
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: center bottom, center center;
+  transition: scale var(--anim-long), box-shadow var(--anim-long);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+        transparent,
+        rgba(255, 255, 255, 0.6),
+        transparent);
+    transform: skewX(-25deg);
+  }
+
+  @include hover {
+    scale: 1.02;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+    &::before {
+      left: 125%;
+      transition: left 0.6s ease;
+    }
+
+    .invest-card__link {
+      color: var(--col-green-2);
+    }
+  }
+
+  &--currency {
+    background-image: url('@/assets/img/invest-card-bg-2.svg'), linear-gradient(146deg, #f7f7f7 0%, #dde8ff 100%);
+    background-position: center bottom 22px, center center;
+
+    @include max-1440 {
+      background-position: center bottom, center center;
+    }
+  }
+
+  &--eurobonds {
+    background-image: url('@/assets/img/invest-card-bg-3.svg'), linear-gradient(146deg, #f7f7f7 0%, #dde8ff 100%);
+  }
+
+  &--etf {
+    background-image: url('@/assets/img/invest-card-bg-4.avif'), linear-gradient(146deg, #f7f7f7 0%, #dde8ff 100%);
+    background-size: 369px 224px, cover;
+    background-position: center bottom 27px, center center;
+  }
+
+  &--global {
+    background-image: url('@/assets/img/invest-card-bg-5.avif'), linear-gradient(146deg, #f7f7f7 0%, #dde8ff 100%);
+    background-size: 304px 240px, cover;
+  }
+
+  &--metalls {
+    background-image: url('@/assets/img/invest-card-bg-6.avif'), linear-gradient(146deg, #f7f7f7 0%, #dde8ff 100%);
+    background-size: 346px 225px, cover;
+    background-position: center bottom 25px, center center;
+  }
+
+  @include max-1200 {
+    height: 250px;
+    background-image: linear-gradient(146deg, #f7f7f7 0%, #dde8ff 100%);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @include max-768 {
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: fluid(20, 28);
+    color: var(--col-black-1);
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--col-accent-1);
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+  }
+}

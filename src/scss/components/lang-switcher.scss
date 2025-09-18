@@ -1,0 +1,82 @@
+@use "@/scss/helpers" as *;
+
+.lang-switcher {
+  position: relative;
+  display: inline-block;
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 0;
+    color: var(--col-black-1);
+    transition: color var(--anim-normal);
+
+    @include hover {
+      color: var(--col-accent-1);
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    color: currentColor;
+  }
+
+  &__arrow-icon {
+    position: relative;
+    top: 2px;
+    left: 1px;
+    transition: rotate var(--anim-normal);
+  }
+
+  &__dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    max-height: 0;
+    border-radius: 12px;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border-bottom: 5px solid var(--col-accent-1);
+    pointer-events: none;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: var(--col-white);
+  }
+
+  &__lang-text {
+    display: inline-block;
+    padding: 5px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color var(--anim-normal);
+
+    &.active {
+      color: var(--col-green-2);
+    }
+
+    @include hover {
+      color: var(--col-accent-1);
+    }
+  }
+
+  &.is-open {
+    .lang-switcher__arrow-icon {
+      rotate: -180deg;
+    }
+
+    .lang-switcher__dropdown {
+      max-height: 200px;
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}

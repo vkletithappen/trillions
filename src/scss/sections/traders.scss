@@ -1,0 +1,234 @@
+@use "@/scss/helpers" as *;
+
+.traders {
+  padding-top: 52px;
+  overflow: hidden;
+
+  &__tabs {
+    margin-bottom: fluid(30, 64);
+  }
+
+  &__caption {
+    display: flex;
+    align-items: flex-start;
+    gap: 119px;
+    margin-bottom: 40px;
+
+    @include max-1440 {
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    @include max-1024 {
+      display: none;
+    }
+  }
+
+  &__title {
+    flex: 0 0 calc(700 / 1240 * 100%);
+  }
+
+  &__links {
+    flex: 0 0 calc(368 / 1240 * 100%);
+    padding-top: 25px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 17px;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 123px;
+    min-height: 36px;
+    border-radius: 4px;
+    background-color: var(--col-black-1);
+    transition: background-color var(--anim-normal);
+
+    &--ios {
+      background-image: url('@/assets/img/appstore-icon.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &--android {
+      background-image: url('@/assets/img/googleplay-icon.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    @include hover {
+      background-color: var(--col-accent-1);
+    }
+  }
+}
+
+.content-traders {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    background: linear-gradient(146deg, #f7f7f7 0%, #dde8ff 100%);
+
+    &:nth-child(2n) {
+      background-image: none;
+      background-color: transparent;
+
+      .content-traders__wrapper {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 119px;
+        padding-bottom: fluid(50, 82);
+
+        @include max-1440 {
+          justify-content: space-between;
+          gap: 30px;
+        }
+
+        @include max-1200 {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+      }
+
+      .content-traders__content {
+        flex: 0 0 calc(700 / 1240 * 100%);
+      }
+
+      .content-traders__feature {
+        background-color: var(--col-blue-light-2);
+      }
+    }
+  }
+
+  &__wrapper {
+    padding-top: fluid(40, 103);
+    padding-bottom: fluid(40, 98);
+    display: flex;
+    align-items: flex-start;
+    gap: 86px;
+    animation: appearanceFromLeft 0.5s ease-in-out;
+
+    @include max-1440 {
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    @include max-1200 {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+  }
+
+  &__content {
+    flex: 0 0 calc(655 / 1240 * 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include max-1200 {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    max-width: 645px;
+
+    @include max-1200 {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    max-width: 470px;
+
+    @include max-1200 {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__sublist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 16px;
+
+    @include max-1200 {
+      justify-content: center;
+    }
+
+    @include max-768 {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 41px;
+    padding-right: 20px;
+    min-height: 44px;
+    border-radius: 45px;
+    font-weight: 500;
+    font-size: fluid-mobile(13, 18);
+    line-height: 1.2;
+    color: var(--col-black-1);
+    background-color: var(--col-white);
+    background-image: url('@/assets/img/content-traders-check-icon.svg');
+    background-repeat: no-repeat;
+    background-position: left 16px center;
+
+    &--soon {
+      gap: 12px;
+    }
+
+    @include max-1440 {
+      padding-left: 47px;
+    }
+
+    @include max-768 {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+
+  &__feature-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 6px;
+    min-height: 28px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--col-white);
+    background-color: var(--col-accent-1);
+  }
+
+  &__btn {
+    margin-top: 41px;
+  }
+}

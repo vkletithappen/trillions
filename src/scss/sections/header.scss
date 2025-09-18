@@ -1,0 +1,103 @@
+@use "@/scss/helpers" as *;
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+  padding-top: 28px;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include max-1440 {
+      padding: 0 var(--container-offset);
+    }
+  }
+
+  &__logo {
+    position: relative;
+    top: -5px;
+    flex-shrink: 0;
+
+    @include max-1440 {
+      position: static;
+    }
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    gap: fluid(50, 135, 1200, 1680);
+  }
+
+  &__nav {
+    @include max-1200 {
+      display: none;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+
+    @include max-1200 {
+      gap: 25px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+
+    @include max-1200 {
+      gap: 25px;
+    }
+  }
+
+  &__btn {
+    @include max-768 {
+      display: none;
+    }
+  }
+}
+
+.link-header {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--col-black-1);
+  transition: color var(--anim-normal);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--col-accent-1);
+    border-radius: 10px;
+    outline-offset: 5px;
+  }
+
+  @include hover {
+    color: var(--col-accent-1);
+  }
+
+  &:active {
+    color: var(--col-green-2);
+  }
+}
+
+.btn-header {
+  padding: 5px 16.5px;
+  min-height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+}

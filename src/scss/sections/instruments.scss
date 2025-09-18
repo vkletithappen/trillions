@@ -1,0 +1,32 @@
+@use "@/scss/helpers" as *;
+
+.instruments {
+
+  &__title {
+    margin-bottom: fluid(30, 48);
+    max-width: 780px;
+
+    @include max-1200 {
+      max-width: 100%;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: fluid-mobile(14, 24) fluid-mobile(14, 20);
+  }
+
+  &__item {
+    grid-column: span 4;
+
+    @include max-1200 {
+      grid-column: span 6;
+    }
+
+    @include max-576 {
+      grid-column: span 12;
+      column-gap: 0px;
+    }
+  }
+}

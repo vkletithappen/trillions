@@ -1,0 +1,22 @@
+@use "@/scss/helpers" as *;
+
+.faq {
+  padding-top: fluid(80, 129);
+  padding-bottom: fluid(60, 84);
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    margin: 0 auto;
+    max-width: 1070px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    @include max-1440 {
+      max-width: 100%;
+    }
+  }
+}

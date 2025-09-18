@@ -1,0 +1,21 @@
+@use "sass:math";
+
+@function fluid($min: 16, $max: 32, $minVW: 320, $maxVW: 1680) {
+  $minSize: math.div($min, 16);
+  $maxSize: math.div($max, 16);
+  $minWidth: math.div($minVW, 16);
+  $maxWidth: math.div($maxVW, 16);
+
+  $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+  $yAxisIntersection: -$minWidth * $slope + $minSize;
+
+  @return clamp(#{$minSize}rem, #{$yAxisIntersection}rem + #{$slope * 100vw}, #{$maxSize}rem);
+}
+
+@function fluid-tablet($min, $max) {
+  @return fluid($min, $max, 768, 1680);
+}
+
+@function fluid-mobile($min, $max) {
+  @return fluid($min, $max, 320, 768);
+}

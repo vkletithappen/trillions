@@ -1,0 +1,41 @@
+@use "@/scss/helpers" as *;
+
+:root {
+  // base
+  --ff-1: "Inter", sans-serif;
+  --ff-2: "SFProText", sans-serif;
+  --content-width: 1240px;
+  --container-offset: #{fluid-mobile(16, 32)};
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --col-white: #fff;
+  --col-white-02: rgba(255, 255, 255, 0.2);
+
+  --col-black-1: #000;
+  --col-black-1-03: rgba(0, 0, 0, 0.3);
+  --col-black-1-05: rgba(0, 0, 0, 0.5);
+  --col-black-1-07: rgba(0, 0, 0, 0.7);
+  --col-black-1-08: rgba(0, 0, 0, 0.8);
+
+  --col-dark-1: #202020;
+  --col-dark-1-03: rgba(32, 32, 32, 0.3);
+
+  --col-accent-1: #0157ff;
+  --col-accent-1-08: rgba(1, 87, 255, 0.8);
+  --col-blue-1: #deeaff;
+
+  --col-blue-light-1: #9abcff;
+  --col-blue-light-2: #ecf1fb;
+
+  --col-green-1: #16c784;
+  --col-green-2: #00b67a;
+
+  --col-red-1: #cf202f;
+
+  --col-grey-light-1: #eff4f9;
+
+  // other
+  --anim-normal: 0.25s ease-in-out;
+  --anim-long: 0.4s ease-in-out;
+}

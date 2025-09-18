@@ -1,0 +1,83 @@
+@use "@/scss/helpers" as *;
+
+.burger {
+  --burger-width: 18px;
+  --burger-line-height: 2px;
+  --burger-gap: 6px;
+
+  display: none;
+  margin-left: 11px;
+  margin-right: 11px;
+  position: relative;
+  z-index: 190;
+  width: var(--burger-width);
+  height: calc(var(--burger-line-height) * 3 + var(--burger-gap) * 2);
+  color: var(--col-white);
+  background-color: transparent;
+
+  @include max-1200 {
+    display: block;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: var(--col-black-1);
+    border: 1px solid var(--col-dark-1-02);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: var(--burger-line-height);
+    border-radius: 30px;
+    background-color: currentColor;
+    transition: all var(--anim-long);
+
+    transform-origin: center;
+
+    &:first-child {
+      translate: 0 calc(-50% - var(--burger-gap));
+    }
+
+    &:nth-child(2) {
+      translate: 0 -50%;
+    }
+
+    &:last-child {
+      translate: 0 calc(-50% + var(--burger-gap));
+    }
+  }
+
+  &.is-active {
+    .burger__line {
+
+      &:first-child {
+        translate: 0 -50%;
+        rotate: 45deg;
+        scale: 1.1;
+      }
+
+      &:nth-child(2) {
+        translate: 15px 0;
+        opacity: 0;
+        width: 0;
+      }
+
+      &:last-child {
+        translate: 0 -50%;
+        rotate: -45deg;
+        scale: 1.1;
+      }
+    }
+  }
+}

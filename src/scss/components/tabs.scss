@@ -1,0 +1,46 @@
+@use "@/scss/helpers" as *;
+
+.tabs {
+  &__tablist {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+
+    @include max-576 {
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--col-dark-1-03);
+    transition: color var(--anim-normal);
+
+    &.is-active {
+      color: var(--col-accent-1);
+      pointer-events: none;
+    }
+
+    @include hover {
+      color: var(--col-green-2);
+    }
+
+    @include max-768 {
+      flex: 1;
+    }
+  }
+
+  &-content {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}

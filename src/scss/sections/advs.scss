@@ -1,0 +1,94 @@
+@use "@/scss/helpers" as *;
+
+.advs {
+  padding-top: fluid(60, 120);
+
+  &__title {
+    margin-bottom: fluid(40, 77);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 38px 20px;
+  }
+
+  &__item {
+    grid-column: span 4;
+
+    @include max-1200 {
+      grid-column: span 6;
+    }
+
+    @include max-768 {
+      grid-column: span 12;
+    }
+  }
+}
+
+.item-advs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 65px;
+  padding-right: 30px;
+  background-image: url('@/assets/img/advs-icon-1.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  @include max-768 {
+    align-items: center;
+    padding-right: 0;
+    background-position: center top;
+  }
+
+  &--choice {
+    background-image: url('@/assets/img/advs-icon-2.svg');
+  }
+
+  &--modern {
+    background-image: url('@/assets/img/advs-icon-3.svg');
+  }
+
+  &--support {
+    background-image: url('@/assets/img/advs-icon-4.svg');
+  }
+
+  &--speed {
+    background-image: url('@/assets/img/advs-icon-5.svg');
+  }
+
+  &--terms {
+    background-image: url('@/assets/img/advs-icon-6.svg');
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    max-width: 296px;
+    font-weight: 600;
+    font-size: fluid-mobile(18, 21);
+    color: var(--col-black-1);
+
+    @include max-1200 {
+      max-width: 100%;
+    }
+
+    @include max-768 {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    max-width: 350px;
+
+    @include max-1200 {
+      max-width: 100%;
+    }
+
+    @include max-768 {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}

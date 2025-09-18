@@ -1,0 +1,28 @@
+# Унифицированные переводы строк (LF в репозитории)
+* text=auto eol=lf
+
+# Гарантируем, что эти типы файлов всегда текстовые и с LF
+*.js text eol=lf
+*.ts text eol=lf
+*.jsx text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Двоичные файлы — не трогаем
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.svg binary
+*.ico binary
+*.mp4 binary
+*.mp3 binary
+*.woff binary
+*.woff2 binary

@@ -1,0 +1,154 @@
+@use "@/scss/helpers" as *;
+
+.nav {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &--menu {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+
+    &--top-footer {
+      flex-wrap: wrap;
+      gap: fluid(20, 72);
+
+      @include max-576 {
+        flex-direction: column;
+      }
+    }
+
+    &--bottom-footer {
+      flex-wrap: wrap;
+      gap: fluid(20, 71);
+
+      @include max-576 {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__item {
+    &--dropdown {
+      position: relative;
+      padding: 10px 0;
+
+      &:hover {
+        .dropdown-nav {
+          transform: scaleY(1);
+          opacity: 1;
+          translate: 0 0;
+          pointer-events: auto;
+          transition-delay: 0s;
+        }
+
+        .nav__link--dropdown {
+          color: var(--col-accent-1);
+        }
+
+        .nav__link-icon {
+          rotate: -180deg;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--col-black-1-03);
+    transition: color var(--anim-normal);
+
+    &--dropdown {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    &--bottom-footer {
+      font-size: 14px;
+    }
+
+    &--menu {
+      display: inline-flex;
+      align-items: center;
+      padding: 20px 0;
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--col-accent-1);
+      border-radius: 10px;
+      outline-offset: 5px;
+    }
+
+    @include hover {
+      color: var(--col-accent-1);
+    }
+
+    &:active {
+      color: var(--col-green-2);
+    }
+  }
+
+  &__link-icon {
+    transition: rotate var(--anim-normal);
+  }
+
+  &__dropdown {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 100%;
+  }
+}
+
+.dropdown-nav {
+  width: 180px;
+  background-color: var(--col-white);
+  border-radius: 8px;
+  border-bottom: 5px solid var(--col-accent-1);
+  overflow: hidden;
+
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  translate: 0 -10px;
+  pointer-events: none;
+  transition:
+    transform 0.4s ease 0.15s,
+    opacity 0.4s ease 0.15s,
+    translate 0.4s ease 0.15s;
+
+  &__list {
+    padding: 10px 20px;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--col-black-1);
+    transition:
+      color var(--anim-normal),
+      background-color var(--anim-normal),
+      padding var(--anim-normal);
+
+    @include hover {
+      color: var(--col-accent-1);
+      background-color: var(--col-grey-light-1);
+      padding-left: 10px;
+    }
+  }
+}

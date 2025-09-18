@@ -1,0 +1,167 @@
+@use "@/scss/helpers" as *;
+
+.accounts {
+  padding-top: fluid(60, 70);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  &__content {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include max-1200 {
+      grid-column: span 12;
+    }
+
+    @include max-768 {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+
+    @include max-768 {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    max-width: 335px;
+    margin-bottom: 20px;
+
+    @include max-1200 {
+      max-width: 100%;
+    }
+
+    @include max-768 {
+      text-align: center;
+    }
+  }
+
+  &__secondary-text {
+    margin: 0;
+    margin-top: auto;
+    padding-bottom: 4px;
+    max-width: 305px;
+    font-weight: 400;
+    font-size: fluid-mobile(14, 16);
+    line-height: 1.5;
+    color: var(--col-black-1-05);
+
+    @include max-1200 {
+      max-width: 100%;
+    }
+
+    @include max-768 {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include max-1200 {
+      grid-column: span 12;
+    }
+  }
+
+  &__item {
+    @include max-768 {
+      grid-column: span 2;
+    }
+  }
+}
+
+.card-accounts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: fluid-mobile(26, 48);
+  padding-right: fluid-mobile(20, 40);
+  padding-bottom: fluid-mobile(26, 38);
+  padding-left: fluid-mobile(20, 40);
+  border-radius: 15px;
+  background: linear-gradient(146deg, #f7f7f7 0%, #dde8ff 100%);
+  transition: box-shadow var(--anim-normal);
+
+  @include hover {
+    box-shadow: 0 5px 24px rgba(85, 96, 133, 0.33);
+  }
+
+  &__type {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    margin-bottom: 13px;
+    min-height: 33px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--col-white);
+    background: linear-gradient(121deg, #016aff 0%, #0592e7 29.94%, #695ce9 55.75%, #e36196 76.11%, #fecb33 100%);
+
+    &--pro {
+      gap: 4px;
+      background: var(--col-black-1);
+    }
+  }
+
+  &__deposit {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: -0.05em;
+    color: var(--col-black-1);
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 36px;
+    max-width: 316px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--col-black-1-07);
+
+    @include max-1200 {
+      max-width: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 33px;
+  }
+
+  &__feature {
+    display: inline-block;
+    padding-left: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--col-black-1);
+    background-image: url('@/assets/img/card-accounts-check-icon.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  &__btn {
+    margin-top: auto;
+    width: 100%;
+  }
+}

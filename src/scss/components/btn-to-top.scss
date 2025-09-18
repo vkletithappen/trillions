@@ -1,0 +1,37 @@
+@use "@/scss/helpers" as *;
+
+.btn-to-top {
+  position: fixed;
+  z-index: 10;
+  bottom: 50px;
+  right: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: var(--col-black-1-07);
+  border: 1px solid currentColor;
+  border-radius: 12px;
+
+  opacity: 0;
+  translate: 0 40px;
+  scale: 0.8;
+  pointer-events: none;
+
+  transition:
+    opacity 0.4s ease,
+    translate 0.4s ease,
+    scale 0.4s ease, color 0.4s ease;
+
+  &.is-visible {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+    pointer-events: auto;
+  }
+
+  @include hover {
+    color: var(--col-accent-1);
+  }
+}

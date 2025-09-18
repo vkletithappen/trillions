@@ -1,0 +1,29 @@
+.menu {
+  position: fixed;
+  overflow-y: auto;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 40px 50px 40px;
+  width: 100%;
+  max-width: 576px;
+  height: 100svh;
+  background-color: var(--col-white);
+
+  transform: translateX(100%);
+  transition: transform var(--anim-long);
+
+  &.is-active {
+    transform: none;
+  }
+
+  &__bottom-block {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "page": {
+    "title": "Trillions | Multimarket Platform"
+  },
+  "lang": {
+    "current": "En",
+    "names": { "en": "English", "ru": "Русский" }
+  },
+  "global": {
+    "btn-cta": "Open an account",
+    "phone-placeholder": "Enter phone number",
+    "soon-tag": "Soon",
+    "get-bonus-text": "Get a welcome bonus",
+    "bonus-amount": "from 50$",
+    "btn-register": "Register"
+  },
+  "header": {
+    "logo-link": {
+      "title": "Home Page",
+      "aria-label": "Home Page"
+    },
+    "logo-image": {
+      "alt": "Trillions logotype"
+    },
+    "nav-link-first": "What We Offer",
+    "nav-link-second": "Markets",
+    "nav-link-third": "Trading platform",
+    "nav-link-fourth": "About Trillions",
+    "btn-login": "Sign in",
+    "btn-registration": "Sign up",
+    "nav-dropdown": {
+      "first": "Finance",
+      "second": "Crypto",
+      "third": "Trading",
+      "fourth": "Metalls"
+    }
+  },
+  "hero": {
+    "title":"Invest easily on the multi-market platform Trillions",
+    "desc": "Trade global stocks, popular crypto assets, national currencies, and ETFs from a single app",
+    "list": {
+      "first": "Trading accounts opened",
+      "second": "Record client profit",
+      "third": "Trading servers uptime",
+      "period": "in 7 days"
+    },
+    "img": {
+      "alt": "Trillions App for trading"
+    }
+  },
+  "market": {
+    "title": "Stocks"
+  },
+  "traders": {
+    "title": "Платформа для трейдеров",
+    "tabs": {
+      "label": {
+        "aria-label": "For traders"
+      },
+      "first-btn": "Conservative traders",
+      "second-btn": "Active traders"
+    },
+    "secondary-title": "Global markets, right in your hand",
+    "desc": "Trade global stocks, top crypto assets, currencies, and ETFs — all in one app",
+    "content": {
+      "img-1": {
+        "alt": "Snapshot of trading app"
+      },
+      "img-2": {
+        "alt": "Trillions App"
+      },  
+      "titles": {
+        "first": "A simple way to build a forward-looking portfolio that exceeds expectations",
+        "second": "Trade from your mobile phone or computer anywhere"
+      },
+      "text": {
+        "first": "Trade stocks, cryptocurrency, ETFs, and FX from a single app 24/7",
+        "second": "Trade from your mobile phone or computer anywhere 24/7 without limits"
+      },
+      "list": {
+        "first": {
+          "first": "Eurobonds with a guaranteed yield of up to 8% per year&nbsp;*",
+          "second": "Structured products with returns up to 20% per year&nbsp;**",
+          "third": "Investment consultant",
+          "fourth": "Financial AI assistant",
+          "fifth": "Copy trading – coming soon"
+        },
+        "second": {
+          "first": "Low commissions and spreads",
+          "second": "Leverage from 1:1 to 1:1000",
+          "third": "Interbank trade execution in 0.001 seconds",
+          "fourth": "Over 10,000 trading instruments",
+          "fifth": "Strategy testing",
+          "sixth": "Strategy testing",
+          "seventh": "Demo account",
+          "eighth": "Reliability and regulation"   
+        }
+      }           
+    }
+  },
+  "instruments": {
+    "title": "Next-generation multi-market platform",
+    "titles": {
+      "first": "Crypto assets",
+      "second": "National currencies",
+      "third": "Eurobonds",
+      "fourth": "ETFs",
+      "fifth": "Global stocks",
+      "sixth": "Metals and commodities"
+    },
+    "desc": {
+      "first": "A tool that allows you to earn profit through passive participation."
+    },
+    "link": "Learn more"
+  },
+  "advs": {
+    "title": "Client success is our priority",
+    "titles": {
+      "title-1": "Low commissions and spreads",
+      "title-2": "Wide range of assets",
+      "title-3": "Advanced trading platforms",
+      "title-4": "24/7 support",
+      "title-5": "High order execution speed",
+      "title-6": "Flexible conditions for different types of traders"
+    },
+    "texts": {
+      "text-1": "Competitive fees on trading operations help increase traders’ profits.",
+      "text-2": "Access to various markets, including stocks, forex, cryptocurrencies, commodities, and indices.",
+      "text-3": "Support for popular platforms such as MetaTrader 5 with a convenient interface and functionality.",
+      "text-4": "Fast and high-quality assistance through multiple communication channels.",
+      "text-5": "Trades are executed within a few milliseconds regardless of volume.",
+      "text-6": "Support for both beginner and professional traders with different strategies."
+    }
+  },
+  "accounts": {
+    "title": "Account types on the platform",
+    "desc": "The account is suitable for beginner users and intermediate-level investors.",
+    "secondary-text": "Each type offers the option to open an “Islamic account,” compliant with AAOIFI standards and all Sharia requirements.",
+    "standart": {
+      "price": "from $10",
+      "desc": "The account is suitable for beginner users and intermediate-level investors.",
+      "list": {
+        "text-1": "All available markets",
+        "text-2": "24/7 online support",
+        "text-3": "Loyalty program",
+        "text-4": "AI assistant"
+      }
+    },
+    "pro": {
+      "price": "from $50,000",
+      "desc": "The account is suitable for professionals, companies, and other major players.",
+      "list": {
+        "text-1": "API and sub-accounts",
+        "text-2": "Customized solutions",
+        "text-3": "Personal account manager",
+        "text-4": "Membership in a private club"
+      }
+    }
+  },
+  "reviews": {
+    "title": "We work for results, not just for kind words, but...",
+    "subtitle": "Great!",
+    "based-on": "Based on",
+    "reviews-count": "198 reviews",
+    "card-1": {
+      "attrs": {
+        "aria-label": "Rating: 5 out of 5 stars"
+      },
+      "title": "Fast response and quick solution",
+      "desc": "Fast response and quick solution. Perfect! Great customer service. I’ve been with...",
+      "author": "Suzanne Vega, 2 day ago"
+    },
+    "card-2": {
+      "attrs": {
+        "aria-label": "Rating: 5 out of 5 stars"
+      },
+      "title": "Fast response and quick solution",
+      "desc": "Fast response and quick solution. Perfect! Great customer service. I’ve been with...",
+      "author": "Suzanne Vega, 2 day ago"
+    },
+    "card-3": {
+      "attrs": {
+        "aria-label": "Rating: 5 out of 5 stars"
+      },
+      "title": "Fast response and quick solution",
+      "desc": "Fast response and quick solution. Perfect! Great customer service. I’ve been with...",
+      "author": "Suzanne Vega, 2 day ago"
+    }
+  },
+  "faq": {
+    "title": "Still have questions?",
+    "item-1": {
+      "question": "How does the platform work?",
+      "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis rem sit repellendus quisquam quidem non quod totam exercitationem minus fuga voluptates tempore ratione, corrupti vitae ex corporis impedit! Pariatur, expedita."
+    },
+    "item-2": {
+      "question": "How is the exchange registered?",
+      "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis rem sit repellendus quisquam quidem non quod totam exercitationem minus fuga voluptates tempore ratione, corrupti vitae ex corporis impedit! Pariatur, expedita."
+    },
+    "item-3": {
+      "question": "Which markets are available on the trading platform?",
+      "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis rem sit repellendus quisquam quidem non quod totam exercitationem minus fuga voluptates tempore ratione, corrupti vitae ex corporis impedit! Pariatur, expedita."
+    },
+    "item-4": {
+      "question": "Is there an option to use a demo account?",
+      "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis rem sit repellendus quisquam quidem non quod totam exercitationem minus fuga voluptates tempore ratione, corrupti vitae ex corporis impedit! Pariatur, expedita."
+    },
+    "item-5": {
+      "question": "Is there support for AI bots?",
+      "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis rem sit repellendus quisquam quidem non quod totam exercitationem minus fuga voluptates tempore ratione, corrupti vitae ex corporis impedit! Pariatur, expedita."
+    }
+  },
+  "footer": {
+    "title": "Open an account in&nbsp;5&nbsp;minutes",
+    "form-desc": "Start investing today and receive a welcome gift from the company.",
+    "warning-title": "Capital at risk",
+    "warning-desc": "Past performance is not a reliable indicator of future results. Currency rate fluctuations can adversely impact the overall returns on your original investment. Learn more by reading our full Risk Disclosure and our Trading FAQ",
+    "links": {
+      "link-1": "Home",
+      "link-2": "Finance",
+      "link-3": "Crypto",
+      "link-4": "Trading",
+      "link-5": "About",
+      "link-6": "Website Terms",
+      "link-7": "Legal Agreements",
+      "link-8": "Privacy Policy"
+    }
+  }
+}

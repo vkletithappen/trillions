@@ -1,0 +1,18 @@
+@use "@/scss/helpers" as *;
+
+.messengers {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    background: linear-gradient(121deg, #016aff 0%, #0592e7 29.94%, #695ce9 55.75%, #e36196 76.11%, #fecb33 100%);
+    color: var(--col-white);
+  }
+}

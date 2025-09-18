@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trillions | Мультирыночная платформа</title>
+  <meta name="description" content="Description text">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#dde7fe">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="page__body">
+  {{> header }}
+  <main class="main">
+    {{> hero }}
+    {{> market }}
+    {{> traders }}
+    {{> instruments }}
+    {{> advs }}
+    {{> accounts}}
+    {{> crypto-market }}
+    {{> reviews }}
+    {{> faq }}
+  </main>
+  {{> footer }}
+  <button class="btn-reset btn-to-top" data-js-btn-to-top>
+    <svg width="22" height="12" viewBox="0 0 22 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.7225 11.7211C22.0925 11.3494 22.0925 10.7467 21.7225 10.375L11.6702 0.278791C11.3007 -0.0922226 10.7023 -0.0929198 10.3319 0.276641L10.3298 0.278791C10.3251 0.283438 10.3208 0.288144 10.3161 0.292908L0.277656 10.375C-0.0925527 10.7468 -0.0925527 11.3495 0.277656 11.7212C0.647867 12.0929 1.24784 12.0929 1.61805 11.7212L11.0001 2.2981L20.3821 11.7211C20.7523 12.0929 21.3523 12.0929 21.7225 11.7211Z" />
+    </svg>
+  </button>
+  <div class="overlay" data-js-overlay></div>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
