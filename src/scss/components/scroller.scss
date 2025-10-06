@@ -10,7 +10,7 @@
   &__inner {
     --gapOnItems: #{fluid-mobile(16, 32)};
     --translateDistance: calc(var(--gapOnItems) / 2);
-    --animationDuration: 30s;
+    --animationDuration: 35s;
 
     animation: scrollAnimation var(--animationDuration) infinite linear;
     display: flex;
