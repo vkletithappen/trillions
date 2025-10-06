@@ -8,12 +8,9 @@
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 
   &__inner {
-    /* Distance between items */
     --gapOnItems: #{fluid-mobile(16, 32)};
-    /* Distance needed, don't change unless needed */
     --translateDistance: calc(var(--gapOnItems) / 2);
-    /* Animation duration */
-    --animationDuration: 25s;
+    --animationDuration: 30s;
 
     animation: scrollAnimation var(--animationDuration) infinite linear;
     display: flex;
